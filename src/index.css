@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@300&display=swap');
+@keyframes imgAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.4);
+        transition: ease-in 0.2s;
+    }
+    100% {
+        transform: scale(1); 
+    }
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Kalnia';
+    color: whitesmoke;
+}
+
+body{
+    background: url(./Images/backGrnd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.app-div{
+    width: 100%;
+    height: 100vh;
+    color: white;    
+}
+
+.search-box, .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}  
+
+.input-box{
+    width: 500px;
+    height: 25px;
+    padding: 10px;
+    border: solid 1px black;
+    border-radius: 35px;
+    padding-left: 35px;
+    font-size: 16px;
+    margin-top: 75px;
+    margin-bottom: 25px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.search-btn, .reset-btn{
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+}
+
+.search-btn{
+    margin-right: 20px;
+    background-color: rgb(11, 37, 120);
+}
+
+.reset-btn{
+    margin-left: 20px;
+    background-color: rgb(101, 97, 97);
+}
+
+button{
+    transition: transform 0.2s ease-in-out;
+}
+
+button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+input::placeholder{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.place-details{
+    text-align: center;
+}
+
+.weather-details{
+    margin-top: 70px;
+}
+
+.weather-desc{
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.weather-data{
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    gap: 40px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.bold{
+    font-size: large;
+}
+
+.weather-img{
+    animation: imgAnimation 2s infinite;
+}
+
+.description{
+    margin-top: 5px;
+    text-transform: capitalize;
+}
+
+.weather-data:hover{
+    transform: scale(1.1);
+}
+
+.footer{
+    margin-top: 20px;
+}
